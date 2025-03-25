@@ -51,6 +51,17 @@
     }
     window.addEventListener("resize", resizeCanvas);
     window.addEventListener("load", resizeCanvas);
+
+    function lockOrientation() {
+        if (screen.orientation) {
+            screen.orientation.lock('landscape').catch(function(error) {
+                console.log("Orientation lock failed:", error);
+            });
+        } else {
+            console.log("Screen orientation API not supported.");
+        }
+    }
+    window.addEventListener("load", lockOrientation);
   </script>
 </body>
 
