@@ -52,17 +52,19 @@
     window.addEventListener("resize", resizeCanvas);
     window.addEventListener("load", resizeCanvas);
 
-    function lockOrientation() {
-        if (screen.orientation) {
-            screen.orientation.lock('landscape').catch(function(error) {
-                console.log("Orientation lock failed:", error);
-            });
-        } else {
-            console.log("Screen orientation API not supported.");
-        }
+    function checkOrientation() {
+      if (window.innerHeight > window.innerWidth) {
+        document.getElementById("rotateMessage").style.display = "flex";
+        document.getElementById("gameContainer").style.display = "none";
+      } else {
+        document.getElementById("rotateMessage").style.display = "none";
+        document.getElementById("gameContainer").style.display = "block";
+      }
     }
-    window.addEventListener("load", lockOrientation);
-  </script>
+
+    window.addEventListener("resize", checkOrientation);
+    window.addEventListener("load", checkOrientation);
+  </script>  
 </body>
 
 </html>
