@@ -13,7 +13,7 @@
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
   <canvas id="unity-canvas" width=1520 height=800 tabindex="-1"
     style="width: 1520px; height: 800px; background: #231F20"></canvas>
-  <script src="Build/Atomica-541c-webgl-02.loader.js" crossorigin="anonymous"></script>
+  <script src="Build/Atomica-541c-webgl-03.loader.js" crossorigin="anonymous"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       // Mobile device style: fill the whole browser client area with the game canvas:
@@ -32,9 +32,9 @@
 
     createUnityInstance(document.querySelector("#unity-canvas"), {
       arguments: [],
-      dataUrl: "Build/Atomica-541c-webgl-02.data",
-      frameworkUrl: "Build/Atomica-541c-webgl-02.framework.js",
-      codeUrl: "Build/Atomica-541c-webgl-02.wasm",
+      dataUrl: "Build/Atomica-541c-webgl-03.data",
+      frameworkUrl: "Build/Atomica-541c-webgl-03.framework.js",
+      codeUrl: "Build/Atomica-541c-webgl-03.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Naguatech",
       productName: "webgl-Atomica",
@@ -43,10 +43,10 @@
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
     });
     function resizeCanvas() {
-      var canvas = document.querySelector("canvas"); // Unity canvas'ını seç
+      var canvas = document.querySelector("canvas");
       if (canvas) {
-        canvas.style.width = "100%";  // iFrame genişliğine uyum sağla
-        canvas.style.height = "100%"; // iFrame yüksekliğine uyum sağla
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
     }
     window.addEventListener("resize", resizeCanvas);
