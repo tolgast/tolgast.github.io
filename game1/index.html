@@ -4,16 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Access-Control-Allow-Origin" content="*">
-  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-  <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
   <title>Unity Web Player | webgl-Atomica</title>
 </head>
 
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-  <canvas id="unity-canvas" width=1520 height=800 tabindex="-1"
-    style="width: 1520px; height: 800px; background: #231F20"></canvas>
-  <script src="Build/Atomica-541c-webgl-03.loader.js" crossorigin="anonymous"></script>
+  <canvas id="unity-canvas" width=1080 height=810 tabindex="-1"
+    style="width: 1080px; height: 810px; background: #231F20"></canvas>
+  <script src="Build/Atomica-541c-webgl.loader.js"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       // Mobile device style: fill the whole browser client area with the game canvas:
@@ -32,9 +29,9 @@
 
     createUnityInstance(document.querySelector("#unity-canvas"), {
       arguments: [],
-      dataUrl: "Build/Atomica-541c-webgl-03.data",
-      frameworkUrl: "Build/Atomica-541c-webgl-03.framework.js",
-      codeUrl: "Build/Atomica-541c-webgl-03.wasm",
+      dataUrl: "Build/Atomica-541c-webgl.data",
+      frameworkUrl: "Build/Atomica-541c-webgl.framework.js",
+      codeUrl: "Build/Atomica-541c-webgl.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Naguatech",
       productName: "webgl-Atomica",
