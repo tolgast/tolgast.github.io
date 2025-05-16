@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Unity WebGL</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #unity-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+  </div>
+  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+  <script>
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "%UNITY_DATA_URL%",
+      frameworkUrl: "%UNITY_FRAMEWORK_URL%",
+      codeUrl: "%UNITY_CODE_URL%",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "%COMPANY_NAME%",
+      productName: "%PRODUCT_NAME%",
+      productVersion: "%PRODUCT_VERSION%"
+    });
+  </script>
+</body>
+</html>
