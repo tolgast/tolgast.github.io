@@ -27,15 +27,32 @@
   </div>
   <script src="%UNITY_WEBGL_LOADER_URL%"></script>
   <script>
-    createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "%UNITY_DATA_URL%",
-      frameworkUrl: "%UNITY_FRAMEWORK_URL%",
-      codeUrl: "%UNITY_CODE_URL%",
+    const buildUrl = "Build"; // Build klasörünün adı
+    const loaderUrl = buildUrl + "/WebGL-T5.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/WebGL-T5.data",
+      frameworkUrl: buildUrl + "/WebGL-T5.framework.js",
+      codeUrl: buildUrl + "/WebGL-T5.wasm",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "%COMPANY_NAME%",
-      productName: "%PRODUCT_NAME%",
-      productVersion: "%PRODUCT_VERSION%"
-    });
+      companyName: "MyCompany",
+      productName: "MyProduct",
+      productVersion: "1.0"
+    };
+
+    const canvas = document.querySelector("#unity-canvas");
+
+    const script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config)
+        .then((unityInstance) => {
+          console.log("Unity loaded.");
+        })
+        .catch((message) => {
+          alert("Failed to load Unity: " + message);
+        });
+    };
+    document.body.appendChild(script);
   </script>
 </body>
 </html>
