@@ -1,5 +1,11 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Ammo" preserve="all" />
+    <type fullname="AmmoSelection" preserve="all" />
+    <type fullname="AmmoSelectionHandler" preserve="all" />
+    <type fullname="AmmoTypeinfoUI" preserve="all" />
+    <type fullname="AmmoUI" preserve="all" />
+    <type fullname="AmmoUIControler" preserve="all" />
     <type fullname="AnimEnd" preserve="all" />
     <type fullname="AnimEvent" preserve="all" />
     <type fullname="AudioControl" preserve="all" />
@@ -152,6 +158,8 @@
     <type fullname="BES503A.Manager03A" preserve="all" />
     <type fullname="BES503B.Manager03B" preserve="all" />
     <type fullname="BES503C.Manager03C" preserve="all" />
+    <type fullname="BuildingSystem" preserve="all" />
+    <type fullname="CamRotation" preserve="all" />
     <type fullname="CarAudioListenerFinder" preserve="all" />
     <type fullname="CarInventoryController" preserve="all" />
     <type fullname="CarSpeedTextFinder" preserve="all" />
@@ -165,6 +173,7 @@
     <type fullname="CoinManager.AtomicaCoinUIManager" preserve="all" />
     <type fullname="Collectible" preserve="all" />
     <type fullname="CustomHintPlaceholder" preserve="all" />
+    <type fullname="DeadController" preserve="all" />
     <type fullname="DepoGame.Addition1" preserve="all" />
     <type fullname="DepoGame.Addition2" preserve="all" />
     <type fullname="DepoGame.Addition3" preserve="all" />
@@ -174,9 +183,22 @@
     <type fullname="DepoGame.Extraction3" preserve="all" />
     <type fullname="DepoGame.Intro" preserve="all" />
     <type fullname="EdgeSelection" preserve="all" />
+    <type fullname="EnableCameraDepthInForward" preserve="all" />
     <type fullname="FailHintplaceholder" preserve="all" />
+    <type fullname="FallingBlock" preserve="all" />
+    <type fullname="FireController" preserve="all" />
+    <type fullname="FirstPersonMobileTools.DynamicFirstPerson.CameraLook" preserve="all" />
+    <type fullname="FirstPersonMobileTools.DynamicFirstPerson.MovementController" preserve="all" />
+    <type fullname="FirstPersonMobileTools.DynamicFirstPerson.nonMobileInput" preserve="all" />
+    <type fullname="FirstPersonMobileTools.Joystick" preserve="all" />
+    <type fullname="FirstPersonMobileTools.MobileButton" preserve="all" />
+    <type fullname="FirstPersonMobileTools.Utility.DisplaySliderValue" preserve="all" />
+    <type fullname="FirstPersonMobileTools.Utility.DropDownManager" preserve="all" />
+    <type fullname="FirstPersonMobileTools.Utility.FovKick" preserve="all" />
+    <type fullname="FirstPersonMobileTools.Utility.Setting" preserve="all" />
     <type fullname="FlagHolder" preserve="all" />
     <type fullname="G01.CameraController" preserve="all" />
+    <type fullname="Game040201g" preserve="all" />
     <type fullname="Game050107.BoxItem" preserve="all" />
     <type fullname="Game050107.FinishArea" preserve="all" />
     <type fullname="Game050107.Game050107gManager" preserve="all" />
@@ -188,16 +210,24 @@
     <type fullname="GeneralTypeAnimation" preserve="all" />
     <type fullname="GetScreenRes" preserve="all" />
     <type fullname="GridSelection" preserve="all" />
+    <type fullname="GunLookAt" preserve="all" />
     <type fullname="Hamburger" preserve="all" />
+    <type fullname="HealthUIController" preserve="all" />
     <type fullname="HUDIndicator.IndicatorOffScreen" preserve="all" />
     <type fullname="HUDIndicator.IndicatorOnScreen" preserve="all" />
     <type fullname="HUDIndicator.IndicatorRenderer" preserve="all" />
     <type fullname="InteractableObjects" preserve="all" />
     <type fullname="KnifeControl" preserve="all" />
+    <type fullname="LegoSpin" preserve="all" />
+    <type fullname="LevelInfoPanelController" preserve="all" />
+    <type fullname="LevelObject" preserve="all" />
+    <type fullname="LevelOBjectController" preserve="all" />
     <type fullname="LineWhich" preserve="all" />
     <type fullname="LookAtCamera" preserve="all" />
+    <type fullname="MainMenuScript" preserve="all" />
     <type fullname="Manager" preserve="all" />
     <type fullname="MobileDisableAutoSwitchControls" preserve="all" />
+    <type fullname="MovingCubes" preserve="all" />
     <type fullname="NumberScroll1" preserve="all" />
     <type fullname="NumberScroll2" preserve="all" />
     <type fullname="PanelManager" preserve="all" />
@@ -211,6 +241,9 @@
     <type fullname="QuestTaskSystem.TaskFlowManager" preserve="all" />
     <type fullname="RandomIdle" preserve="all" />
     <type fullname="RandomValueAttacher" preserve="all" />
+    <type fullname="RotateCam" preserve="all" />
+    <type fullname="SettingsMenuScript" preserve="all" />
+    <type fullname="SkySpin" preserve="all" />
     <type fullname="SpawnManager" preserve="all" />
     <type fullname="StarterAssets.StarterAssetsInputs" preserve="all" />
     <type fullname="StarterAssets.ThirdPersonController" preserve="all" />
@@ -270,16 +303,23 @@
     <type fullname="U3S9L2.Manager" preserve="all" />
     <type fullname="U3S9L2.typeAnimation" preserve="all" />
     <type fullname="UIAnimationPanel" preserve="all" />
+    <type fullname="UIGradient" preserve="all" />
     <type fullname="UIRectOutline" preserve="all" />
     <type fullname="UIVirtualButton" preserve="all" />
     <type fullname="UIVirtualJoystick" preserve="all" />
+    <type fullname="unit4.BoxController" preserve="all" />
     <type fullname="WarehouseManager" preserve="all" />
     <type fullname="WebGLSupport.WebGLInput" preserve="all" />
-    <type fullname=".AnimationItems" preserve="nothing" serialized="true" />
-    <type fullname=".SalesmanDatas" preserve="nothing" serialized="true" />
+    <type fullname=".AmmoSelectionOptions" preserve="nothing" serialized="true" />
+    <type fullname=".Ammos" preserve="nothing" serialized="true" />
+    <type fullname=".RandomizeLevels" preserve="nothing" serialized="true" />
     <type fullname=".UIVirtualButton/BoolEvent" preserve="nothing" serialized="true" />
     <type fullname=".UIVirtualButton/Event" preserve="nothing" serialized="true" />
     <type fullname=".UIVirtualJoystick/Event" preserve="nothing" serialized="true" />
+    <type fullname="FirstPersonMobileTools.Utility.Bobbing" preserve="nothing" serialized="true" />
+    <type fullname="FirstPersonMobileTools.Utility.Bobbing/SpeedMultiplier" preserve="nothing" serialized="true" />
+    <type fullname=".AnimationItems" preserve="nothing" serialized="true" />
+    <type fullname=".SalesmanDatas" preserve="nothing" serialized="true" />
     <type fullname="HUDIndicator.IndicatorArrowStyle" preserve="nothing" serialized="true" />
     <type fullname="HUDIndicator.IndicatorIconStyle" preserve="nothing" serialized="true" />
   </assembly>
@@ -318,6 +358,19 @@
     <type fullname="UnityEngine.InputSystem.PlayerInput/DeviceLostEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ProBuilder.ProBuilderMesh" preserve="all" />
+    <type fullname="UnityEngine.ProBuilder.Shapes.ProBuilderShape" preserve="all" />
+    <type fullname="UnityEngine.ProBuilder.AutoUnwrapSettings" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.Face" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.Shapes.Arch" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.Shapes.Cone" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.Shapes.Cube" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.Shapes.Cylinder" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.Shapes.Prism" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.SharedVertex" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ProBuilder.UnwrapParameters" preserve="nothing" serialized="true" />
+  </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
@@ -327,6 +380,7 @@
   <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="TMPro.TextMeshPro" preserve="all" />
     <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_Dropdown" preserve="all" />
     <type fullname="TMPro.TMP_FontAsset" preserve="all" />
     <type fullname="TMPro.TMP_InputField" preserve="all" />
     <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
@@ -341,10 +395,20 @@
     <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.GlyphAnchorPoint" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.LigatureSubstitutionRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.MarkPositionAdjustment" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.MarkToBaseAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Unity.VisualScripting.Variables" preserve="all" />
     <type fullname="Unity.VisualScripting.SerializationData" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEditor.Audio.AudioMixerSnapshotController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Animation" preserve="all" />
@@ -354,6 +418,8 @@
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Audio.AudioMixer" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerGroup" preserve="all" />
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioListener" preserve="all" />
     <type fullname="UnityEngine.AudioSource" preserve="all" />
@@ -361,6 +427,7 @@
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
     <type fullname="UnityEngine.Cubemap" preserve="all" />
+    <type fullname="UnityEngine.FlareLayer" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Light" preserve="all" />
     <type fullname="UnityEngine.LightingSettings" preserve="all" />
@@ -387,6 +454,9 @@
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Grid" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
     <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
@@ -401,6 +471,7 @@
     <type fullname="UnityEngine.BoxCollider" preserve="all" />
     <type fullname="UnityEngine.CharacterController" preserve="all" />
     <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.PhysicsMaterial" preserve="all" />
     <type fullname="UnityEngine.Rigidbody" preserve="all" />
     <type fullname="UnityEngine.SphereCollider" preserve="all" />
   </assembly>
@@ -415,10 +486,16 @@
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Tilemaps.Tile" preserve="all" />
+    <type fullname="UnityEngine.Tilemaps.Tilemap" preserve="all" />
+    <type fullname="UnityEngine.Tilemaps.TilemapRenderer" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
     <type fullname="UnityEngine.EventSystems.EventTrigger" preserve="all" />
     <type fullname="UnityEngine.EventSystems.Physics2DRaycaster" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.PhysicsRaycaster" preserve="all" />
     <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
@@ -429,10 +506,14 @@
     <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.Outline" preserve="all" />
+    <type fullname="UnityEngine.UI.RawImage" preserve="all" />
     <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
     <type fullname="UnityEngine.UI.Shadow" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.Toggle" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.EventSystems.EventTrigger/Entry" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.EventSystems.EventTrigger/TriggerEvent" preserve="nothing" serialized="true" />
@@ -443,6 +524,9 @@
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
