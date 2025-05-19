@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Unity WebGL</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #unity-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+  </div>
+  <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+  <script>
+    const buildUrl = "Build"; // Build klasörünün adı
+    const loaderUrl = buildUrl + "/3D-Farm-11G.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/3D-Farm-11G.data",
+      frameworkUrl: buildUrl + "/3D-Farm-11G.framework.js",
+      codeUrl: buildUrl + "/3D-Farm-11G.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "MyCompany",
+      productName: "MyProduct",
+      productVersion: "1.0"
+    };
+
+    const canvas = document.querySelector("#unity-canvas");
+
+    const script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config)
+        .then((unityInstance) => {
+          console.log("Unity loaded.");
+        })
+        .catch((message) => {
+          alert("Failed to load Unity: " + message);
+        });
+    };
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>
